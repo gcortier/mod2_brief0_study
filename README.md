@@ -10,8 +10,9 @@ Projet de nettoyage, préparation et visualisation de données numériques pour 
   - [Structure du projet](#structure-du-projet)
   - [Utilisation](#utilisation)
   - [Annexes](#annexes)
-    - [Procédure de nettoyage](#procédure-de-nettoyage)
+    - [Procédure de nettoyage (Mod 0 et plus)](#procédure-de-nettoyage-mod-0-et-plus)
 - [Réflexions éthiques (Mod 1):](#réflexions-éthiques-mod-1)
+- [Nettoyages des données (Mod 2)](#nettoyages-des-données-mod-2)
 
 ## Description
 Analyser, nettoyer et transformer les données numériques afin de produire un dataset fiable, propre, cohérent et directement exploitable, en appliquant des techniques rigoureuses de traitement de données et en garantissant leur intégrité.
@@ -51,7 +52,9 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 │   ├── data_numeric_only.csv                       # Donnée source
 │   ├── df_data_numeric_cleaned.csv                 # Données filtrées et nettoyées
 │   ├── data-all-68482f115ac04033078508.csv         # Donnée source numérique et catégorique
-│   └── df_data_ALL_cleaned.csv                     # Données filtrées et nettoyées
+│   ├── df_data_ALL_cleaned.csv                     # Données filtrées et nettoyées
+│   ├── df_data_all_cleaned_data_analyste_reviewed.csv        # Données filtrées et nettoyées
+│   └── df_data_all_cleaned_ethical_analyste_reviewed.csv     # Données filtrées et nettoyées
 ├── .gitignore
 ├── README.md
 ├── ethique_note_0.ipynb              # Notebook du projet pour la partie numérique
@@ -65,7 +68,7 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 - Lancer le notebook `ethique_note_1.ipynb` pour suivre l'analyse et le nettoyage des données éthiques.
 
 ## Annexes
-### Procédure de nettoyage
+### Procédure de nettoyage (Mod 0 et plus)
 1. **Chargement des données** : Importation du dataset et affichage des premières lignes.
 2. **Analyse** : Visualisation des données manquantes (`missingno`) et exploration des relations (`seaborn`).
 3. **Nettoyage** : Suppression des colonnes inutiles, gestion des valeurs manquantes, filtrage des données pertinentes.
@@ -80,3 +83,5 @@ la démarche de nettoyage et de préparation des données a été  guidée par d
 - Chaque étape du processus de nettoyage est documentée pour la traçabilité des données.
 - On a évité les biais dans le traitement des données pour garantir une représentation équitable de tous les groupes. (par exemple le sexe et la nationalité)
 
+
+# Nettoyages des données (Mod 2)
