@@ -11,6 +11,7 @@ Projet de nettoyage, préparation et visualisation de données numériques pour 
   - [Utilisation](#utilisation)
   - [Annexes](#annexes)
     - [Procédure de nettoyage](#procédure-de-nettoyage)
+- [Réflexions éthiques :](#réflexions-éthiques-)
 
 ## Description
 Analyser, nettoyer et transformer les données numériques afin de produire un dataset fiable, propre, cohérent et directement exploitable, en appliquant des techniques rigoureuses de traitement de données et en garantissant leur intégrité.
@@ -47,17 +48,21 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 ```
 .
 ├── data/
-│   ├── data_numeric_only.csv         # Donnée source
-│   └── df_data_numeric_cleaned.csv   # Données filtrées et nettoyées
+│   ├── data_numeric_only.csv                       # Donnée source
+│   ├── df_data_numeric_cleaned.csv                 # Données filtrées et nettoyées
+│   ├── data-all-68482f115ac04033078508.csv         # Donnée source numérique et catégorique
+│   └── df_data_ALL_cleaned.csv                     # Données filtrées et nettoyées
 ├── .gitignore
 ├── README.md
-├── ethique_note_0.ipynb              # Notebook du projet
+├── ethique_note_0.ipynb              # Notebook du projet pour la partie numérique
+├── ethique_note_1.ipynb              # Notebook du projet pour la partie numérique et catégorique
 └── requirements.txt
 ```
 
 
 ## Utilisation
 - Lancer le notebook `ethique_note_0.ipynb` pour suivre l'analyse et le nettoyage des données.
+- Lancer le notebook `ethique_note_1.ipynb` pour suivre l'analyse et le nettoyage des données éthiques.
 
 ## Annexes
 ### Procédure de nettoyage
@@ -66,5 +71,12 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 3. **Nettoyage** : Suppression des colonnes inutiles, gestion des valeurs manquantes, filtrage des données pertinentes.
 4. **Sauvegarde** : Export du dataset nettoyé pour une utilisation ultérieure.
 
-> Pour plus de détails et de visualisations, consulte le notebook associé.
+> Pour plus de détails et de visualisations, consulter le notebook associé.
+
+# Réflexions éthiques :
+la démarche de nettoyage et de préparation des données a été  guidée par des principes éthiques pour garantir l'intégrité et la responsabilité dans le traitement des données. 
+
+
+- Chaque étape du processus de nettoyage est documentée pour la traçabilité des données.
+- On a évité les biais dans le traitement des données pour garantir une représentation équitable de tous les groupes. (par exemple le sexe et la nationalité)
 
