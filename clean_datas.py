@@ -25,11 +25,9 @@ categorical_cols = ["sport_licence", "niveau_etude", "region", "smoker", "situat
 
 # Encodage des variables catégorielles
 collisions = pd.get_dummies(collisions, columns=categorical_cols, drop_first=True)
-# collisions.head()
 
 # Standardisation des colonnes numériques (moyenne 0, écart-type 1)
 collisions[numerical_cols] = (collisions[numerical_cols] - collisions[numerical_cols].mean()) / collisions[numerical_cols].std()
-collisions[numerical_cols].head()
 
 # Sauvegarde du dataset nettoyé
 collisions.to_csv(join('data', 'df_data_all_cleaned_data_analyste_reviewed.csv'), index=False)

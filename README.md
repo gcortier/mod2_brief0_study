@@ -54,11 +54,12 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 │   ├── data-all-68482f115ac04033078508.csv         # Donnée source numérique et catégorique
 │   ├── df_data_ALL_cleaned.csv                     # Données filtrées et nettoyées
 │   ├── df_data_all_cleaned_data_analyste_reviewed.csv        # Données filtrées et nettoyées
-│   └── df_data_all_cleaned_ethical_analyste_reviewed.csv     # Données filtrées et nettoyées
+│   └── df_data_all_cleaned_ethical_analyste_reviewed.csv     # Données filtrées et ethiques
 ├── .gitignore
 ├── README.md
 ├── ethique_note_0.ipynb              # Notebook du projet pour la partie numérique
 ├── ethique_note_1.ipynb              # Notebook du projet pour la partie numérique et catégorique
+├── clean_data.py                     # le script de nettoyage en 2 passes
 └── requirements.txt
 ```
 
@@ -85,3 +86,9 @@ la démarche de nettoyage et de préparation des données a été  guidée par d
 
 
 # Nettoyages des données (Mod 2)
+- J'ai appliqué les nettoyages de données en 2 passes : 
+  - la passe analytiques pour les données manquantes ou aberrantes
+  - la passe éthique pour les données sensibles et les biais potentiels.
+
+
+> Pour tester des approches panda, j'ai réalisé la mise en colonne des données catégoriques avec la fonction `pd.get_dummies()` et la **standardisation** à la moyenne des données numériques avec `df.mean()`. Cependant, dans un contexte de production, j'utiliserai les approche de **sklearn** pour la normalisation et la transformation des données catégoriques, car elles sont plus robustes et adaptées aux pipelines de machine learning.
