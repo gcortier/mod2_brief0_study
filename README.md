@@ -11,7 +11,7 @@ Projet de nettoyage, préparation et visualisation de données numériques pour 
   - [Utilisation](#utilisation)
   - [Annexes](#annexes)
     - [Procédure de nettoyage](#procédure-de-nettoyage)
-- [Réflexions éthiques :](#réflexions-éthiques-)
+- [Réflexions éthiques (Mod 1):](#réflexions-éthiques-mod-1)
 
 ## Description
 Analyser, nettoyer et transformer les données numériques afin de produire un dataset fiable, propre, cohérent et directement exploitable, en appliquant des techniques rigoureuses de traitement de données et en garantissant leur intégrité.
@@ -73,7 +73,7 @@ Analyser, nettoyer et transformer les données numériques afin de produire un d
 
 > Pour plus de détails et de visualisations, consulter le notebook associé.
 
-# Réflexions éthiques :
+# Réflexions éthiques (Mod 1):
 la démarche de nettoyage et de préparation des données a été  guidée par des principes éthiques pour garantir l'intégrité et la responsabilité dans le traitement des données. 
 
 
